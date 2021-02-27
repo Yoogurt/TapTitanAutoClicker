@@ -15,6 +15,7 @@ class AdbInputCommand : Closeable {
 
     init {
 //        output.append("adb -s 69T7N15917003677 shell".enter()).flush()
+        output.append("adb connect 172.24.184.173:5555".enter()).flush()
         output.append("adb -s 172.24.184.173:5555 shell".enter()).flush()
     }
 

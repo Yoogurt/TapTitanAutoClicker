@@ -47,9 +47,14 @@ class TapTitanClickerController {
 
         val process = newCmdProcess()
 
+        process.onExit().handle { _, throwable ->
+            throwable?.printStackTrace()
+            currentJob?.cancel()
+        }
+
         currentJob?.invokeOnCompletion {
             println("destroying process , $it")
-            process.destroy()
+            process.destroyForcibly()
         }
 
         val tapTitanCommandController = TapTitanCommandController()
@@ -57,7 +62,7 @@ class TapTitanClickerController {
         tapTitanCommandController.use {
             tapTitanCommandController.enterHeroesList()
 
-            while (true) {
+            while (currentJob?.isActive == true && process.isAlive) {
                 val timeCost = measureTimeMillis {
                     try {
                         // run collect fairly
@@ -75,6 +80,8 @@ class TapTitanClickerController {
                 _repeatCount.value++
                 delay(duration)
             }
+
+            return true
         }
     }
 

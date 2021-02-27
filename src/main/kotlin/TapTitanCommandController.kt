@@ -17,9 +17,9 @@ class TapTitanCommandController : Closeable {
 
     suspend fun collectFairly() {
         println("collectFairly")
-        (100..1000 step 100).forEach {
+        (100..900 step 100).forEach {
             adbCommand.tap(it + randomRange(), 500 + randomRange())
-            delay(500L + randomRange())
+            delay(300L + randomRange())
         }
         println("clicking confirm fairly video")
         delay(1000L + randomRange())

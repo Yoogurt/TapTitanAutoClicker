@@ -1,5 +1,4 @@
 import androidx.compose.desktop.Window
-import androidx.compose.foundation.clickable
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Providers
