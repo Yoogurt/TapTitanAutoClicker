@@ -39,13 +39,13 @@ fun TapTitanCenterCommand(paddingValues: PaddingValues = PaddingValues()){
 
         Button(onClick = {
             coroutineScope.launch {
-                controller.startAutoCollect()
+                controller.startCollectFairAndUpgradeHeroes()
             }
         }, enabled = controller.currentRunningJob.value == null) {
             Text("Run Collect")
         }
 
-        Spacer(modifier = Modifier.height(20.dp))
+        Spacer(modifier = Modifier.height(10.dp))
 
         Button(onClick = {
             coroutineScope.launch {

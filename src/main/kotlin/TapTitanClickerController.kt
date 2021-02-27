@@ -5,6 +5,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlin.coroutines.coroutineContext
 import kotlin.coroutines.resume
+import kotlin.system.measureTimeMillis
 
 class TapTitanClickerController {
     private val _repeatCount = mutableStateOf(0)
@@ -15,7 +16,7 @@ class TapTitanClickerController {
 
     private fun newCmdProcess() = ProcessBuilder().command("cmd").start()
 
-    suspend fun startAutoCollect(duration: Long = 5000): Boolean {
+    suspend fun startCollectFairAndUpgradeHeroes(duration: Long = 10000): Boolean {
         suspendCancellableCoroutine<Unit> { cont ->
             val previousJob = mCurrentJob.value
 
@@ -47,18 +48,29 @@ class TapTitanClickerController {
         val process = newCmdProcess()
 
         currentJob?.invokeOnCompletion {
-            println("destroying process")
+            println("destroying process , $it")
             process.destroy()
         }
 
-        val adbCommand = AdbInputCommand()
+        val tapTitanCommandController = TapTitanCommandController()
 
-        adbCommand.use {
+        tapTitanCommandController.use {
+            tapTitanCommandController.enterHeroesList()
+
             while (true) {
-                // run collect fairly
-                adbCommand.swipe(0, 600, 1080, 600, 2000)
-                delay(1000)
-                adbCommand.tap(689, 1057)
+                val timeCost = measureTimeMillis {
+                    try {
+                        // run collect fairly
+                        tapTitanCommandController.collectFairly()
+                        delay(1000L + tapTitanCommandController.randomRange())
+                        tapTitanCommandController.upgradeHeroes()
+                    }catch (e:Throwable){
+                        e.printStackTrace()
+                        throw e
+                    }
+                }
+
+                println("loop #${_repeatCount.value} cost $timeCost ms")
 
                 _repeatCount.value++
                 delay(duration)
