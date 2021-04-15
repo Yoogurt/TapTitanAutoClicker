@@ -1,0 +1,44 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="me.marik.android"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml
+10
+11    <application
+11-->E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:3:5-14:19
+12        android:allowBackup="false"
+12-->E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:4:13-40
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.5.0-alpha01] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\8b633ac5bd88e569b681336942645703\core-1.5.0-alpha01\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:extractNativeLibs="false"
+16        android:label="TT2Clicker"
+16-->E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:6:13-39
+17        android:supportsRtl="true"
+17-->E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:5:13-39
+18        android:testOnly="true"
+19        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+19-->E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:7:13-69
+20        <activity android:name="me.marik.android.MainActivity" >
+20-->E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:8:9-13:20
+20-->E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:8:19-47
+21            <intent-filter>
+21-->E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:9:13-12:29
+22                <action android:name="android.intent.action.MAIN" />
+22-->E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:10:17-68
+22-->E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:10:25-66
+23
+24                <category android:name="android.intent.category.LAUNCHER" />
+24-->E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:11:17-76
+24-->E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:11:27-74
+25            </intent-filter>
+26        </activity>
+27    </application>
+28
+29</manifest>

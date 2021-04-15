@@ -1,0 +1,184 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:2:1-15:12
+MERGED from [:common] E:\Android\TapTitanClickerMultiplatform\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [org.jetbrains.compose.material:material-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\592f538708d7f14f9ba62eea6996e40d\material-debug\AndroidManifest.xml:17:1-24:12
+MERGED from [org.jetbrains.compose.foundation:foundation-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\8c04c9a13ef3a0e615d9303f28e712f6\foundation-debug\AndroidManifest.xml:17:1-24:12
+MERGED from [org.jetbrains.compose.animation:animation-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\8a321a81956aeda7007344d8fa1c5791\animation-debug\AndroidManifest.xml:17:1-24:12
+MERGED from [org.jetbrains.compose.foundation:foundation-layout-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\7ad0c7ef6cf008b972361f83b4000ee3\foundation-layout-debug\AndroidManifest.xml:17:1-24:12
+MERGED from [org.jetbrains.compose.material:material-icons-core-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\ea4b1bff65e90753eec34f6c8d8e5f0d\material-icons-core-debug\AndroidManifest.xml:17:1-24:12
+MERGED from [org.jetbrains.compose.ui:ui-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\d0a82f057ed3099706b0ba7f1ae49179\ui-debug\AndroidManifest.xml:17:1-24:12
+MERGED from [org.jetbrains.compose.ui:ui-text-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\97e91cd2b92dca173259a9ace612f02e\ui-text-debug\AndroidManifest.xml:17:1-24:12
+MERGED from [org.jetbrains.compose.runtime:runtime-saved-instance-state-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\96238330107485b65f34d0e1b8a77e50\runtime-saved-instance-state-debug\AndroidManifest.xml:17:1-24:12
+MERGED from [org.jetbrains.compose.animation:animation-core-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\fb94e4a9925ff1f8f4cbbd40347a2f84\animation-core-debug\AndroidManifest.xml:17:1-24:12
+MERGED from [org.jetbrains.compose.ui:ui-graphics-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\60dcb81434e4df8e945d13988f750c13\ui-graphics-debug\AndroidManifest.xml:17:1-24:12
+MERGED from [org.jetbrains.compose.ui:ui-unit-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\b2f8b828453a23067492b8f982fce815\ui-unit-debug\AndroidManifest.xml:17:1-24:12
+MERGED from [org.jetbrains.compose.ui:ui-geometry-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\0c3262241973c5884e6d0cd185c1985d\ui-geometry-debug\AndroidManifest.xml:17:1-24:12
+MERGED from [org.jetbrains.compose.ui:ui-util-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\ad88f81069ec4afc74c8bd0211596397\ui-util-debug\AndroidManifest.xml:17:1-24:12
+MERGED from [org.jetbrains.compose.runtime:runtime-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\50c0d9e209f784ff716abb9805f3839c\runtime-debug\AndroidManifest.xml:17:1-24:12
+MERGED from [org.jetbrains.compose.runtime:runtime-dispatch-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\f977fcf6fce4ff9190442d6eb9ac72cc\runtime-dispatch-debug\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\8d4c0baaddddcf744afa36381c9809f5\core-ktx-1.3.1\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat:1.3.0-alpha01] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\bdea7cd57c3f028f0d262743ca81558f\appcompat-1.3.0-alpha01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.0-alpha07] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\20ecf8074e3ec3da6e7ce566af5355b3\fragment-1.3.0-alpha07\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\ef8f82922d356ea5e86ee2880604b087\autofill-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.0-alpha07] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\e4a6991ba3435fcf93f05573fbe2a554\activity-1.2.0-alpha07\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\6e8038dd76619934f29af7b781565d5e\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\f30691698ff20734296e2b4aa8794b6f\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0-alpha01] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\e04061d2e79ccb2dc3f041b07b7f2240\appcompat-resources-1.3.0-alpha01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\e0b6fdced6281ffae0a87827800c1c35\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\16c4ca1292b46eb4fed6ef5d0639c229\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\0f3d78c3b3c7fed0a8ee8536f674fdf8\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\9748ffac22b6ea05da24c21b0e47dbac\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.5.0-alpha01] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\8b633ac5bd88e569b681336942645703\core-1.5.0-alpha01\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\9258e3c6c5a0048e85256a6aa0be0fd9\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.0-alpha06] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\6af1ece21c9cebab9d050d0ff5cee9b0\lifecycle-viewmodel-savedstate-2.3.0-alpha06\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.0-alpha06] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\83c1dbb3421b918f7b34b7324efc1018\lifecycle-viewmodel-2.3.0-alpha06\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0-alpha01] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\72338146aab29dfc7f235ba299595533\savedstate-1.1.0-alpha01\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\67c528c7961515dcdd21ee036cce583a\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.0-alpha06] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\188da7d4886f6fca037b436fe911ee84\lifecycle-runtime-2.3.0-alpha06\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\56206746c25ad67291cf0f8a19e2d751\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.0-alpha06] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\f43d2c1720a52519becc215aab24e3b4\lifecycle-livedata-core-2.3.0-alpha06\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\36b5730806d3ce3aff0745ca44e63816\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\a3ab25fbee4114f15a798f1e4bc48039\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:2:1-15:12
+	package
+		ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:2:70-96
+		INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml
+		ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:2:1-15:12
+		INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml
+		ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:2:1-15:12
+		INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:3:5-14:19
+MERGED from [androidx.core:core:1.5.0-alpha01] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\8b633ac5bd88e569b681336942645703\core-1.5.0-alpha01\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.5.0-alpha01] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\8b633ac5bd88e569b681336942645703\core-1.5.0-alpha01\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\9258e3c6c5a0048e85256a6aa0be0fd9\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\9258e3c6c5a0048e85256a6aa0be0fd9\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.5.0-alpha01] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\8b633ac5bd88e569b681336942645703\core-1.5.0-alpha01\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:5:13-39
+	android:label
+		ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:6:13-39
+	android:allowBackup
+		ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:4:13-40
+	android:theme
+		ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:7:13-69
+activity#me.marik.android.MainActivity
+ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:8:9-13:20
+	android:name
+		ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:8:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:9:13-12:29
+action#android.intent.action.MAIN
+ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:10:17-68
+	android:name
+		ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:10:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:11:17-76
+	android:name
+		ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml:11:27-74
+uses-sdk
+INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml
+INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml
+MERGED from [:common] E:\Android\TapTitanClickerMultiplatform\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:common] E:\Android\TapTitanClickerMultiplatform\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [org.jetbrains.compose.material:material-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\592f538708d7f14f9ba62eea6996e40d\material-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.material:material-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\592f538708d7f14f9ba62eea6996e40d\material-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.foundation:foundation-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\8c04c9a13ef3a0e615d9303f28e712f6\foundation-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.foundation:foundation-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\8c04c9a13ef3a0e615d9303f28e712f6\foundation-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.animation:animation-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\8a321a81956aeda7007344d8fa1c5791\animation-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.animation:animation-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\8a321a81956aeda7007344d8fa1c5791\animation-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.foundation:foundation-layout-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\7ad0c7ef6cf008b972361f83b4000ee3\foundation-layout-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.foundation:foundation-layout-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\7ad0c7ef6cf008b972361f83b4000ee3\foundation-layout-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.material:material-icons-core-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\ea4b1bff65e90753eec34f6c8d8e5f0d\material-icons-core-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.material:material-icons-core-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\ea4b1bff65e90753eec34f6c8d8e5f0d\material-icons-core-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.ui:ui-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\d0a82f057ed3099706b0ba7f1ae49179\ui-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.ui:ui-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\d0a82f057ed3099706b0ba7f1ae49179\ui-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.ui:ui-text-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\97e91cd2b92dca173259a9ace612f02e\ui-text-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.ui:ui-text-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\97e91cd2b92dca173259a9ace612f02e\ui-text-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.runtime:runtime-saved-instance-state-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\96238330107485b65f34d0e1b8a77e50\runtime-saved-instance-state-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.runtime:runtime-saved-instance-state-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\96238330107485b65f34d0e1b8a77e50\runtime-saved-instance-state-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.animation:animation-core-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\fb94e4a9925ff1f8f4cbbd40347a2f84\animation-core-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.animation:animation-core-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\fb94e4a9925ff1f8f4cbbd40347a2f84\animation-core-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.ui:ui-graphics-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\60dcb81434e4df8e945d13988f750c13\ui-graphics-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.ui:ui-graphics-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\60dcb81434e4df8e945d13988f750c13\ui-graphics-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.ui:ui-unit-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\b2f8b828453a23067492b8f982fce815\ui-unit-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.ui:ui-unit-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\b2f8b828453a23067492b8f982fce815\ui-unit-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.ui:ui-geometry-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\0c3262241973c5884e6d0cd185c1985d\ui-geometry-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.ui:ui-geometry-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\0c3262241973c5884e6d0cd185c1985d\ui-geometry-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.ui:ui-util-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\ad88f81069ec4afc74c8bd0211596397\ui-util-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.ui:ui-util-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\ad88f81069ec4afc74c8bd0211596397\ui-util-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.runtime:runtime-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\50c0d9e209f784ff716abb9805f3839c\runtime-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.runtime:runtime-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\50c0d9e209f784ff716abb9805f3839c\runtime-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.runtime:runtime-dispatch-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\f977fcf6fce4ff9190442d6eb9ac72cc\runtime-dispatch-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [org.jetbrains.compose.runtime:runtime-dispatch-android-debug:0.2.0-build132] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\f977fcf6fce4ff9190442d6eb9ac72cc\runtime-dispatch-debug\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\8d4c0baaddddcf744afa36381c9809f5\core-ktx-1.3.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\8d4c0baaddddcf744afa36381c9809f5\core-ktx-1.3.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.3.0-alpha01] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\bdea7cd57c3f028f0d262743ca81558f\appcompat-1.3.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.0-alpha01] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\bdea7cd57c3f028f0d262743ca81558f\appcompat-1.3.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.0-alpha07] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\20ecf8074e3ec3da6e7ce566af5355b3\fragment-1.3.0-alpha07\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.0-alpha07] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\20ecf8074e3ec3da6e7ce566af5355b3\fragment-1.3.0-alpha07\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\ef8f82922d356ea5e86ee2880604b087\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\ef8f82922d356ea5e86ee2880604b087\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.0-alpha07] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\e4a6991ba3435fcf93f05573fbe2a554\activity-1.2.0-alpha07\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.0-alpha07] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\e4a6991ba3435fcf93f05573fbe2a554\activity-1.2.0-alpha07\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\6e8038dd76619934f29af7b781565d5e\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\6e8038dd76619934f29af7b781565d5e\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\f30691698ff20734296e2b4aa8794b6f\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\f30691698ff20734296e2b4aa8794b6f\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0-alpha01] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\e04061d2e79ccb2dc3f041b07b7f2240\appcompat-resources-1.3.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0-alpha01] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\e04061d2e79ccb2dc3f041b07b7f2240\appcompat-resources-1.3.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\e0b6fdced6281ffae0a87827800c1c35\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\e0b6fdced6281ffae0a87827800c1c35\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\16c4ca1292b46eb4fed6ef5d0639c229\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\16c4ca1292b46eb4fed6ef5d0639c229\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\0f3d78c3b3c7fed0a8ee8536f674fdf8\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\0f3d78c3b3c7fed0a8ee8536f674fdf8\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\9748ffac22b6ea05da24c21b0e47dbac\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\9748ffac22b6ea05da24c21b0e47dbac\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0-alpha01] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\8b633ac5bd88e569b681336942645703\core-1.5.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0-alpha01] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\8b633ac5bd88e569b681336942645703\core-1.5.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\9258e3c6c5a0048e85256a6aa0be0fd9\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\9258e3c6c5a0048e85256a6aa0be0fd9\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.0-alpha06] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\6af1ece21c9cebab9d050d0ff5cee9b0\lifecycle-viewmodel-savedstate-2.3.0-alpha06\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.0-alpha06] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\6af1ece21c9cebab9d050d0ff5cee9b0\lifecycle-viewmodel-savedstate-2.3.0-alpha06\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.0-alpha06] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\83c1dbb3421b918f7b34b7324efc1018\lifecycle-viewmodel-2.3.0-alpha06\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.0-alpha06] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\83c1dbb3421b918f7b34b7324efc1018\lifecycle-viewmodel-2.3.0-alpha06\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0-alpha01] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\72338146aab29dfc7f235ba299595533\savedstate-1.1.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0-alpha01] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\72338146aab29dfc7f235ba299595533\savedstate-1.1.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\67c528c7961515dcdd21ee036cce583a\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\67c528c7961515dcdd21ee036cce583a\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.0-alpha06] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\188da7d4886f6fca037b436fe911ee84\lifecycle-runtime-2.3.0-alpha06\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.0-alpha06] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\188da7d4886f6fca037b436fe911ee84\lifecycle-runtime-2.3.0-alpha06\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\56206746c25ad67291cf0f8a19e2d751\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\56206746c25ad67291cf0f8a19e2d751\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.0-alpha06] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\f43d2c1720a52519becc215aab24e3b4\lifecycle-livedata-core-2.3.0-alpha06\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.0-alpha06] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\f43d2c1720a52519becc215aab24e3b4\lifecycle-livedata-core-2.3.0-alpha06\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\36b5730806d3ce3aff0745ca44e63816\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\36b5730806d3ce3aff0745ca44e63816\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\a3ab25fbee4114f15a798f1e4bc48039\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Marik\.gradle\caches\transforms-2\files-2.1\a3ab25fbee4114f15a798f1e4bc48039\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml
+INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml
+		ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml
+		ADDED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\TapTitanClickerMultiplatform\android\src\main\AndroidManifest.xml

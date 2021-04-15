@@ -1,0 +1,2 @@
+me/marik/android/BuildConfig.java
+ me.marik.android.BuildConfig
