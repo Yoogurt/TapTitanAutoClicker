@@ -13,9 +13,7 @@ open class TapTitanCommandControllerMix2S(protected val tapTitanViewModel: TapTi
     }
 
     protected val command: Command = Command()
-    protected var repeatCount = 1
     private var mClose = false
-    private var mRestartCount = 0
 
     override suspend fun reborn() {
         println("reborn")
@@ -42,10 +40,8 @@ open class TapTitanCommandControllerMix2S(protected val tapTitanViewModel: TapTi
             tap(100, 2100)
             delay(1000)
 
-            repeat(4) {
-                tap(900, 1680)
-                delay(500)
-            }
+            tap(900, 1680)
+            delay(500)
 
             confirmPrestige(false)
             delay(1000)
@@ -119,17 +115,17 @@ open class TapTitanCommandControllerMix2S(protected val tapTitanViewModel: TapTi
             if (tapTitanViewModel.upgrade.value) {
                 swipePrestigePanel()
             }
-            mRestartCount++
+            tapTitanViewModel.outRestartCount.value++
         }
     }
 
-    protected suspend fun swipePrestigePanel(){
+    protected suspend fun swipePrestigePanel() {
         closePanel()
-        command{
+        command {
             tap(810, 2100)
             delay(1000)
 
-            repeat(mRestartCount % 5){
+            repeat(tapTitanViewModel.outRestartCount.value % 5) {
                 swipe(550, 1800, 550, 200, 2000)
             }
         }
@@ -178,8 +174,9 @@ open class TapTitanCommandControllerMix2S(protected val tapTitanViewModel: TapTi
                     upgrade()
                 }
                 reborn()
+                tapTitanViewModel.outPrestigeCount.value++
             }
-            println("loop #${repeatCount} cost $timeCost ms")
+            println("loop #${tapTitanViewModel.outPrestigeCount.value} cost $timeCost ms")
         }
 
         if (tapTitanViewModel.restartFirst.value) {
@@ -189,7 +186,9 @@ open class TapTitanCommandControllerMix2S(protected val tapTitanViewModel: TapTi
         while (!mClose) {
             currentCoroutineContext().ensureActive()
 
-            if (repeatCount % (tapTitanViewModel.restartDuration.value.toIntOrNull() ?: 10) == 0) {
+            if ((tapTitanViewModel.outPrestigeCount.value + 1) % (tapTitanViewModel.restartDuration.value.toIntOrNull()
+                    ?: 10) == 0
+            ) {
                 restartPackage()
             }
 
@@ -199,7 +198,6 @@ open class TapTitanCommandControllerMix2S(protected val tapTitanViewModel: TapTi
                 prestigeFirst = true
             }
             stepRunDuration((tapTitanViewModel.duration.value.toLongOrNull() ?: 90) * 1000)
-            repeatCount++
         }
 
         close()

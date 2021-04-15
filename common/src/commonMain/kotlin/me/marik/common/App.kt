@@ -44,6 +44,14 @@ fun App(dispatcher: CoroutineDispatcher = Dispatchers.Default) {
                             tapTitanViewModel.restartDuration.value = it
                         })
                 }
+                Row(modifier = Modifier.width(200.dp), verticalAlignment = Alignment.CenterVertically) {
+                    Text("Prestige Count:")
+                    Text(tapTitanViewModel.outPrestigeCount.value.toString())
+                }
+                Row(modifier = Modifier.width(200.dp), verticalAlignment = Alignment.CenterVertically) {
+                    Text("Restart Count:")
+                    Text(tapTitanViewModel.outRestartCount.value.toString())
+                }
 
                 val job = tapTitanViewModel.runningCommand.value
                 val countDown = tapTitanViewModel.startCountDown.value
@@ -51,7 +59,9 @@ fun App(dispatcher: CoroutineDispatcher = Dispatchers.Default) {
                 Button(enabled = countDown == 0, onClick = {
                     if (job == null) {
                         val tapTitanCommandControllerMix2S =
-                            if (tapTitanViewModel.inactive.value) TapTitanCommandControllerMix2SInactive(tapTitanViewModel) else TapTitanCommandControllerMix2S(tapTitanViewModel)
+                            if (tapTitanViewModel.inactive.value) TapTitanCommandControllerMix2SInactive(
+                                tapTitanViewModel
+                            ) else TapTitanCommandControllerMix2S(tapTitanViewModel)
                         val coroutineScope = CoroutineScope(dispatcher)
 
                         val job = coroutineScope.launch {

@@ -17,6 +17,9 @@ class TapTitanViewModel {
     val inactive = mutableStateOf(false)
     val mainPackage = mutableStateOf(true)
 
+    val outPrestigeCount = mutableStateOf(0)
+    val outRestartCount = mutableStateOf(0)
+
     val runningCommand = mutableStateOf<Job?>(null, policy = neverEqualPolicy())
     val startCountDown = mutableStateOf(0)
 }
