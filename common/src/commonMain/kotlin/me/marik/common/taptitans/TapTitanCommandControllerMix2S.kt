@@ -19,14 +19,28 @@ open class TapTitanCommandControllerMix2S(protected val tapTitanViewModel: TapTi
         println("reborn")
         closePanel()
 
-        suspend fun Command.confirmPrestige(offset: Boolean) {
-            val prestigeY = if (!offset) 1760 else 1880
+        suspend fun Command.confirmPrestige() {
+            var prestigeY = 1720
             tap(530, prestigeY)
             delay(1000)
 
-            val confirmY = if (!offset) 1500 else 1550
+            var confirmY = 1420
             tap(750, confirmY)
             delay(500)
+
+            prestigeY = 1760
+            tap(530, prestigeY)
+            delay(1000)
+
+            confirmY = 1500
+            tap(750, confirmY)
+            delay(500)
+
+            prestigeY = 1880
+            tap(530, prestigeY)
+            delay(1000)
+
+            confirmY = 1550
             tap(750, confirmY)
             delay(500)
         }
@@ -43,15 +57,15 @@ open class TapTitanCommandControllerMix2S(protected val tapTitanViewModel: TapTi
             tap(900, 1680)
             delay(500)
 
-            confirmPrestige(false)
+            confirmPrestige()
             delay(1000)
-            confirmPrestige(true)
         }
         delay(15000)
         println("reborn finish")
     }
 
     override suspend fun upgrade() {
+        autoUpgrade()
         closePanel()
 
         command {
@@ -94,13 +108,12 @@ open class TapTitanCommandControllerMix2S(protected val tapTitanViewModel: TapTi
     }
 
     protected suspend fun autoUpgrade() {
+        closePanel()
         command {
             tap(280, 2100)
             delay(1000)
-            repeat(3) {
-                tap(640, 1307)
-                delay(1000)
-            }
+            tap(640, 1307)
+            delay(1000)
         }
     }
 
