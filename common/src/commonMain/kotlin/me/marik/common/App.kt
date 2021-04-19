@@ -23,35 +23,39 @@ fun App(dispatcher: CoroutineDispatcher = Dispatchers.Default) {
     MaterialTheme {
         Box(modifier = Modifier.fillMaxSize()) {
             Column(modifier = Modifier.align(Alignment.Center)) {
+
+                Row {
+                    RadioButton(tapTitanViewModel.packageContext.value is MainPackageContext, onClick = {
+                        tapTitanViewModel.swapPackageContextTo(true)
+                    })
+                    Text("Main")
+
+                    Divider(modifier = Modifier.width(50.dp))
+
+                    RadioButton(tapTitanViewModel.packageContext.value is SubPackageContext, onClick = {
+                        tapTitanViewModel.swapPackageContextTo(false)
+                    })
+                    Text("Sub")
+                }
+
+                Divider(modifier = Modifier.width(0.dp).height(20.dp))
+
                 Selection(tapTitanViewModel.prestigeFirst, "Prestige First")
                 Selection(tapTitanViewModel.restartFirst, "Restart First")
-                Selection(tapTitanViewModel.mainPackage, "MainPackage")
                 Selection(tapTitanViewModel.upgrade, "Auto Upgrade")
                 Selection(tapTitanViewModel.upgradeSwipe, "Upgrade Swipe")
                 Selection(tapTitanViewModel.inactive, "Inactive")
+                Selection(tapTitanViewModel.inAbyssalTournament, "Abyssal Tournament")
+                Selection(tapTitanViewModel.swapContextAfterRestart, "Swap Context After Restart")
                 Selection(tapTitanViewModel.printOut, "Print Out")
-                Row(modifier = Modifier.width(200.dp), verticalAlignment = Alignment.CenterVertically) {
-                    Text("Prestige Duration")
-                    TextField(tapTitanViewModel.duration.value, onValueChange = {
-                        tapTitanViewModel.duration.value = it
-                    })
-                }
-                Row(modifier = Modifier.width(200.dp), verticalAlignment = Alignment.CenterVertically) {
-                    Text("Restart Duration")
-                    TextField(
-                        tapTitanViewModel.restartDuration.value,
-                        onValueChange = {
-                            tapTitanViewModel.restartDuration.value = it
-                        })
-                }
-                Row(modifier = Modifier.width(200.dp), verticalAlignment = Alignment.CenterVertically) {
-                    Text("Prestige Count:")
-                    Text(tapTitanViewModel.outPrestigeCount.value.toString())
-                }
-                Row(modifier = Modifier.width(200.dp), verticalAlignment = Alignment.CenterVertically) {
-                    Text("Restart Count:")
-                    Text(tapTitanViewModel.outRestartCount.value.toString())
-                }
+
+                Input(tapTitanViewModel.duration, "Prestige Duration")
+                Input(tapTitanViewModel.restartDuration, "Restart Duration")
+                Input(tapTitanViewModel.upgradeSwipeRepeatCount, "SwipeRepeatCount")
+                Input(tapTitanViewModel.upgradeSwipeAfterReset, "SwipeAfterReset")
+
+                Print(tapTitanViewModel.outPrestigeCount, "Prestige Count:")
+                Print(tapTitanViewModel.outRestartCount, "Restart Count:")
 
                 val job = tapTitanViewModel.runningCommand.value
                 val countDown = tapTitanViewModel.startCountDown.value
@@ -108,5 +112,26 @@ private fun Selection(value: MutableState<Boolean>, text: String) {
         })
 
         Text(text)
+    }
+}
+
+@Composable
+private fun Input(value: MutableState<String>, text: String) {
+    Row(modifier = Modifier.width(200.dp), verticalAlignment = Alignment.CenterVertically) {
+        Text(text)
+        TextField(
+            value.value,
+            onValueChange = {
+                value.value = it
+            })
+    }
+}
+
+
+@Composable
+private fun Print(value: MutableState<*>, text: String) {
+    Row(modifier = Modifier.width(200.dp), verticalAlignment = Alignment.CenterVertically) {
+        Text(text)
+        Text(value.value.toString())
     }
 }

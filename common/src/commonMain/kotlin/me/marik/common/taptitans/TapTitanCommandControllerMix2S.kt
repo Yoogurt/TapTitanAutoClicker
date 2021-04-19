@@ -14,6 +14,7 @@ open class TapTitanCommandControllerMix2S(protected val tapTitanViewModel: TapTi
 
     protected val command: Command = Command()
     private var mClose = false
+    private var mUpgradeSwipeCount = 0
 
     override suspend fun reborn() {
         println("reborn")
@@ -46,9 +47,12 @@ open class TapTitanCommandControllerMix2S(protected val tapTitanViewModel: TapTi
         }
 
         command {
-            tap(550, 1300)
-            delay(500)
-            tap(550, 1300)
+
+            // any unexpected confirm
+            (1300 until 1800 step 100).forEach {
+                tap(550, it)
+                delay(500)
+            }
 
             delay(1000)
             tap(100, 2100)
@@ -72,30 +76,28 @@ open class TapTitanCommandControllerMix2S(protected val tapTitanViewModel: TapTi
             tap(810, 2100)
             delay(1000)
 
-            tap(930, 1700)
-            delay(500)
-            tap(930, 1750)
-            delay(500)
-            tap(930, 1800)
+            repeat(tapTitanViewModel.upgradeSwipeRepeatCount.value.toIntOrNull() ?: 0) {
+                tap(930, 1700)
+                delay(500)
+                mUpgradeSwipeCount++
 
-            delay(500)
-            if (tapTitanViewModel.upgradeSwipe.value) {
-                swipe(550, 1800, 550, 1625, 2000)
+                if (tapTitanViewModel.upgradeSwipe.value) {
+                    swipePrestigePanelOneCell()
+                }
+            }
+
+            if (mUpgradeSwipeCount > tapTitanViewModel.upgradeSwipeAfterReset.value.toIntOrNull() ?: 50) {
+                resetPrestigePanel()
+                mUpgradeSwipeCount = 0
             }
         }
-
-        println("upgrade finish")
     }
 
-    protected suspend fun reset() {
+    protected suspend fun swipePrestigePanelOneCell() {
         command {
-            repeat(10) {
-                swipe(550, 1800, 550, 100, 2000)
-                delay(2500)
-            }
+            swipe(550, 1800, 550, 1625, 1000)
+            delay(1000)
         }
-
-        println("upgrade finish")
     }
 
     protected suspend fun closePanel() {
@@ -119,27 +121,47 @@ open class TapTitanCommandControllerMix2S(protected val tapTitanViewModel: TapTi
 
     protected suspend fun restartPackage() {
         command {
-            println("stopping package")
             forceStop()
+            if (tapTitanViewModel.swapContextAfterRestart.value){
+                tapTitanViewModel.swapPackageContext()
+            }
             delay(5000)
             openApplication()
+            checkInTournament()
             upgradeSkill()
             autoUpgrade()
-            if (tapTitanViewModel.upgrade.value) {
-                swipePrestigePanel()
-            }
             tapTitanViewModel.outRestartCount.value++
         }
     }
 
-    protected suspend fun swipePrestigePanel() {
+    protected suspend fun checkInTournament() {
+        if (tapTitanViewModel.inAbyssalTournament.value) {
+            command {
+                tap(80, 300)
+                delay(1000)
+                repeat(4) {
+                    tap(61, 480)
+                    delay(500)
+                }
+                repeat(2) {
+                    tap(840, 1870)
+                    delay(1000)
+                }
+            }
+
+            delay(20000)
+        }
+    }
+
+    protected suspend fun resetPrestigePanel() {
         closePanel()
         command {
             tap(810, 2100)
             delay(1000)
 
-            repeat(tapTitanViewModel.outRestartCount.value % 5) {
-                swipe(550, 1800, 550, 200, 2000)
+            repeat(15) {
+                swipe(550, 1550, 550, 2000, 1000)
+                delay(1300)
             }
         }
     }
@@ -147,7 +169,7 @@ open class TapTitanCommandControllerMix2S(protected val tapTitanViewModel: TapTi
     protected suspend fun
             openApplication() {
         command {
-            if (tapTitanViewModel.mainPackage.value) {
+            if (tapTitanViewModel.mainPackage) {
                 tap(910, 210)
             } else {
                 tap(750, 210)
@@ -159,7 +181,7 @@ open class TapTitanCommandControllerMix2S(protected val tapTitanViewModel: TapTi
     protected suspend fun upgradeSkill() {
         println("run skill")
         command {
-            repeat(3) {
+            repeat(4) {
                 tap(100, 1900)
                 delay(500)
 
@@ -173,6 +195,9 @@ open class TapTitanCommandControllerMix2S(protected val tapTitanViewModel: TapTi
                 delay(500)
 
                 tap(780, 1900)
+                delay(500)
+
+                tap(1000, 1900)
                 delay(500)
             }
         }
