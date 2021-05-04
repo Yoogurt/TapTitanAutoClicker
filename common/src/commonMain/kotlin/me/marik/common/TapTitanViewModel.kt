@@ -7,8 +7,11 @@ import kotlinx.coroutines.Job
 
 class TapTitanViewModel {
 
-    val packageContext = mutableStateOf<PackageContext>(MainPackageContext())
-    var backPackageContext: PackageContext = SubPackageContext()
+    val mainPackageContext = MainPackageContext()
+    val subPackageContext = SubPackageContext()
+
+    val packageContext = mutableStateOf<PackageContext>(mainPackageContext)
+    var backPackageContext: PackageContext = subPackageContext
         private set
 
     fun swapPackageContextTo(main: Boolean) {
@@ -41,12 +44,12 @@ class TapTitanViewModel {
         get() = packageContext.value.upgradeSwipeRepeatCount
     val upgradeSwipeAfterReset: MutableState<String>
         get() = packageContext.value.upgradeSwipeAfterReset
-    val inactive: MutableState<Boolean>
-        get() = packageContext.value.inactive
+    val inactive = mutableStateOf(true)
     val mainPackage: Boolean
         get() = packageContext.value.mainPackage
     val inAbyssalTournament: MutableState<Boolean>
         get() = packageContext.value.inAbyssalTournament
+    val realStop = mutableStateOf(false)
     val swapContextAfterRestart = mutableStateOf(false)
 
     val outPrestigeCount = mutableStateOf(0)

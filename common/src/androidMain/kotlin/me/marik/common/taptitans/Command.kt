@@ -17,8 +17,8 @@ actual class Command {
 
     private inline fun String.enter(): String = "$this$WINDOW_ENTER"
 
-    private val mProcess: Process = ProcessBuilder().command("su", "shell").start()
-    private val output: OutputStreamWriter = mProcess.outputStream.writer()
+    private val mProcess: Process = ProcessBuilder().command("su").start()
+    private val output = DelegateWriter(mProcess.outputStream.writer())
 
     private inline fun throwIfProcessDestory() {
         if (Build.VERSION.SDK_INT > 26 && !mProcess.isAlive) {
@@ -33,12 +33,19 @@ actual class Command {
         delay(duration)
     }
 
-    actual suspend fun forceStop(): Unit {
+    actual suspend fun stopPackage() {
         throwIfProcessDestory()
-        repeat(5) {
+
+        repeat(3) {
             output.append("input keyevent 4".enter()).flush()
             delay(500)
         }
+
+        delay(1000)
+    }
+
+    actual suspend fun backgroundPackage(){
+        output.append("am start -a android.intent.action.MAIN -c android.intent.category.HOME".enter()).flush()
         delay(1000)
     }
 

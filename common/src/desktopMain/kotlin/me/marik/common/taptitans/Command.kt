@@ -24,12 +24,16 @@ actual class Command {
         delay(duration)
     }
 
-    actual suspend fun forceStop(): Unit {
+    actual suspend fun stopPackage(): Unit {
         repeat(5) {
             output.append("input keyevent 4".enter()).flush()
             delay(500)
         }
         delay(1000)
+    }
+
+    actual suspend fun backgroundPackage(){
+        stopPackage()
     }
 
     actual suspend fun tap(x: Int, y: Int): Unit =

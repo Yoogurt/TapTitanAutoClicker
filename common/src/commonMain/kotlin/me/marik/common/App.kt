@@ -1,7 +1,6 @@
 package me.marik.common
 
 import TapTitanCommandControllerMix2S
-import TapTitanCommandControllerMix2SInactive
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.runtime.*
@@ -9,6 +8,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.*
+import me.marik.common.taptitans.TapTitanCommandControllerInactiveCombine
 
 @Composable
 fun App(dispatcher: CoroutineDispatcher = Dispatchers.Default) {
@@ -44,7 +44,13 @@ fun App(dispatcher: CoroutineDispatcher = Dispatchers.Default) {
                 Selection(tapTitanViewModel.restartFirst, "Restart First")
                 Selection(tapTitanViewModel.upgrade, "Auto Upgrade")
                 Selection(tapTitanViewModel.upgradeSwipe, "Upgrade Swipe")
-                Selection(tapTitanViewModel.inactive, "Inactive")
+                Selection(tapTitanViewModel.inactive, "Global Inactive")
+                Selection(
+                    tapTitanViewModel.packageContext.value.doInactive,
+                    "Package Inactive",
+                    enabled = tapTitanViewModel.inactive.value
+                )
+                Selection(tapTitanViewModel.realStop, "Real Stop", enabled = tapTitanViewModel.inactive.value)
                 Selection(tapTitanViewModel.inAbyssalTournament, "Abyssal Tournament")
                 Selection(tapTitanViewModel.swapContextAfterRestart, "Swap Context After Restart")
                 Selection(tapTitanViewModel.printOut, "Print Out")
@@ -62,10 +68,15 @@ fun App(dispatcher: CoroutineDispatcher = Dispatchers.Default) {
 
                 Button(enabled = countDown == 0, onClick = {
                     if (job == null) {
-                        val tapTitanCommandControllerMix2S =
-                            if (tapTitanViewModel.inactive.value) TapTitanCommandControllerMix2SInactive(
-                                tapTitanViewModel
-                            ) else TapTitanCommandControllerMix2S(tapTitanViewModel)
+                        val suspendRunnable =
+                            when {
+                                tapTitanViewModel.inactive.value -> {
+                                    TapTitanCommandControllerInactiveCombine(
+                                        tapTitanViewModel
+                                    )
+                                }
+                                else -> TapTitanCommandControllerMix2S(tapTitanViewModel)
+                            }
                         val coroutineScope = CoroutineScope(dispatcher)
 
                         val job = coroutineScope.launch {
@@ -74,11 +85,11 @@ fun App(dispatcher: CoroutineDispatcher = Dispatchers.Default) {
                                 delay(1000)
                             }
 
-                            tapTitanCommandControllerMix2S.run()
+                            suspendRunnable.run()
                         }
                         if (tapTitanViewModel.printOut.value) {
                             coroutineScope.launch {
-                                tapTitanCommandControllerMix2S.apply {
+                                suspendRunnable.apply {
                                     waitFor(true)
                                 }
                             }.invokeOnCompletion {
@@ -88,7 +99,7 @@ fun App(dispatcher: CoroutineDispatcher = Dispatchers.Default) {
                         job.invokeOnCompletion {
                             it?.printStackTrace()
                             tapTitanViewModel.startCountDown.value = 0
-                            tapTitanCommandControllerMix2S.close()
+                            suspendRunnable.close()
                             tapTitanViewModel.runningCommand.value = null
                         }
                         tapTitanViewModel.runningCommand.value = job
@@ -105,9 +116,9 @@ fun App(dispatcher: CoroutineDispatcher = Dispatchers.Default) {
 }
 
 @Composable
-private fun Selection(value: MutableState<Boolean>, text: String) {
+private fun Selection(value: MutableState<Boolean>, text: String, enabled: Boolean = true) {
     Row {
-        Checkbox(value.value, onCheckedChange = {
+        Checkbox(value.value, enabled = enabled, onCheckedChange = {
             value.value = it
         })
 
